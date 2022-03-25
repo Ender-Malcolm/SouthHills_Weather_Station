@@ -3,7 +3,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgb(161, 161, 253);
-  color:antiquewhite;
+  color:darkblue;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -67,7 +67,7 @@ body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   color:antiquewhite;
-  background: url('/weatherBackground.jpg');
+  background: url('/WarpSpeed004.gif');
   background-size: cover;
 }
 .jumbotron .h1, .jumbotron h1 {

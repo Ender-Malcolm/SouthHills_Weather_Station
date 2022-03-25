@@ -11,19 +11,22 @@ export default {
     async mounted() {
 
         //Async-Await Based Way
-        const response = await fetch("https://weather-station-api.draketamer.repl.co/")
+        const response = await fetch("http://172.17.103.69:8080/")
         const data = await response.json()
-        this.realTemp = data.weatherData.realTemp
-        this.feelsLike = data.weatherData.feelsLike
-        this.windSpeed = data.weatherData.windSpeed
-        this.humidity = data.weatherData.humidity
+        this.realTemp = data.realTemp
+        this.feelsLike = data.feelsLike
+        this.windSpeed = data.windSpeed
+        this.humidity = data.humidity
+
+        console.log(data)
     }
+    
 }
 </script>
 
 <template>
     <div class="jumbotron">
-      <h1>South Hills Altoona</h1>
+      <h1>South Hills, Altoona</h1>
       <div class="row marketing">
         <div class="col-lg-6">
           <h4>Temp</h4>

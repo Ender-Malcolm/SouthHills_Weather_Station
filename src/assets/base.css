@@ -63,17 +63,22 @@ body {
 }
 
 /* Main marketing message and sign up button */
-.jumbotron {
+.jumbotronWeather {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   color:antiquewhite;
   background: url('/WarpSpeed004.gif');
   background-size: cover;
 }
-.jumbotron .h1, .jumbotron h1 {
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  color:antiquewhite;
+}
+.jumbotron .h1, .jumbotron h1, .jumbotronWeather {
   color: antiquewhite;
 }
-.jumbotron .btn {
+.jumbotron .btn, .jumbotronWeather {
   padding: 14px 24px;
   font-size: 21px;
 }

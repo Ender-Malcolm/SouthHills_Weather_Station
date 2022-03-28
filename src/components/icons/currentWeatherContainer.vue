@@ -13,6 +13,7 @@ export default {
         //Async-Await Based Way
         const response = await fetch("http://172.17.103.69:8080/")
         const data = await response.json()
+        // Create loading bar / API Down indicator
         this.realTemp = data.realTemp
         this.feelsLike = data.feelsLike
         this.windSpeed = data.windSpeed
@@ -25,7 +26,7 @@ export default {
 </script>
 
 <template>
-    <div class="jumbotron">
+    <div class="jumbotronWeather">
       <h1>South Hills, Altoona</h1>
       <div class="row marketing">
         <div class="col-lg-6">

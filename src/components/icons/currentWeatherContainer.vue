@@ -6,6 +6,8 @@ export default {
             feelsLike: 0,
             humidity: 0,
             windSpeed: 0,
+            weather: '',
+            airPressure: 0,
         }
     },
     async mounted() {
@@ -14,10 +16,12 @@ export default {
         const response = await fetch("http://172.17.103.69:8080/")
         const data = await response.json()
         // Create loading bar / API Down indicator
-        this.realTemp = data.realTemp
-        this.feelsLike = data.feelsLike
-        this.windSpeed = data.windSpeed
-        this.humidity = data.humidity
+        this.realTemp = data.realTemp.toFixed()
+        this.feelsLike = data.feelsLike.toFixed()
+        this.windSpeed = data.windSpeed.toFixed()
+        this.humidity = data.humidity.toFixed()
+        this.weather = data.sky
+        this.airPressure = data.airPressure*0.0145037738.toFixed(2)
 
         console.log(data)
     }
@@ -38,6 +42,11 @@ export default {
           <h4>Feels Like</h4>
           <p>{{ feelsLike }}&deg;F</p>
         </div>
+
+        <div class="col-lg-6">
+          <h4>Weather</h4>
+          <p>{{ weather }}</p>
+        </div>
       </div>
 
       <div class="row marketing">
@@ -49,6 +58,11 @@ export default {
         <div class="col-lg-6">
           <h4>Wind Speed</h4>
           <p>{{ windSpeed }}mph</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Air Pressure</h4>
+          <p>{{ airPressure }}PSI</p>
         </div>
       </div>
     </div>

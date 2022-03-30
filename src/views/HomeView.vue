@@ -11,11 +11,11 @@ import currentWeatherContainer from "../components/icons/currentWeatherContainer
       <nav>
         <ul class="nav nav-pills pull-right">
           <li role="presentation" class="active">
-            <a href="#">Home</a>
+            <a href="#">Bridge</a>
           </li>
         </ul>
       </nav>
-      <h3 class="text-muted">South Hills Weather Station</h3>
+      <h3 class="text-muted">South Hills Weather Readings</h3>
     </div>
 
     <current-weather-container />
@@ -34,7 +34,7 @@ import currentWeatherContainer from "../components/icons/currentWeatherContainer
     </div>
 
     <footer class="footer">
-      <p>&copy; 2022 Ender Malcolm, South Hills</p>
+      <p>&copy; March, 2022 Ender Malcolm, South Hills</p>
     </footer>
   </div>
   <!-- /container -->

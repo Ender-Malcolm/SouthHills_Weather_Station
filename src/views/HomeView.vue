@@ -5,7 +5,8 @@ import FOOTER from "../components/footer.vue";
 
 
 
-components: { currentWeatherContainer}</script>
+components: { currentWeatherContainer}
+</script>
 
 <template>
   <div class="container">
@@ -17,7 +18,7 @@ components: { currentWeatherContainer}</script>
     
     <current-weather-container />
 
-    <div class="row marketing">
+    <!-- <div class="row marketing">
       <div class="card">
         <h4>Subheading</h4>
         <img src="/southhillsBackground.jpg" class="card-img-top" />
@@ -26,8 +27,10 @@ components: { currentWeatherContainer}</script>
           <p class="card-text">Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
         </div>
       </div>
-    </div>
-
+    </div> -->
+    <br>
+    <br>
+    <br>
     <FOOTER />
   </div>
   <!-- /container -->

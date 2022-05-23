@@ -8,13 +8,14 @@ export default {
       windSpeed: 0,
       weather: '',
       airPressure: 0,
+      altitude: 0,
     }
   },
   async mounted() {
 
     //Async-Await Based Way
     // MUST be on SHGuest network.
-    const response = await fetch("http://172.17.103.69:8080")
+    const response = await fetch("http://172.17.199.140:8080")
     const data = await response.json()
     // Create loading bar / API Down indicator
     this.realTemp = data.realTemp.toFixed()
@@ -23,6 +24,7 @@ export default {
     this.humidity = data.humidity.toFixed()
     this.weather = data.sky
     this.airPressure = (data.airPressure).toFixed(2)
+    this.altitude = (data.altitude).toFixed(2)
 
     console.log(data)
   }
@@ -32,7 +34,7 @@ export default {
 
 <template>
   <div class="jumbotronWeather">
-    <h1>South Hills, Altoona</h1>
+    <h1>South Hills, Altoona, {{ altitude }} Meters</h1>
     <div class="row marketing">
       <div class="col-lg-6">
         <h4>Temp</h4>

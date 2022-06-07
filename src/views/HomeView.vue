@@ -9,6 +9,10 @@ components: { currentWeatherContainer}
 </script>
 
 <template>
+<head>
+  <!--Refresh page automatically every 5 minutes-->
+  <meta http-equiv="Refresh" content="60*5">
+</head>
   <div class="container">
     <div class="header clearfix">
       <navBar />

@@ -17,9 +17,9 @@
                     <li>
                         <a href="/Documentation">Documentation</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="#">Contact</a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>

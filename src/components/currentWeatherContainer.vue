@@ -15,7 +15,8 @@ export default {
 
     //Async-Await Based Way
     // MUST be on SHGuest network.
-    const response = await fetch("http://172.17.199.140:8080")
+    // Raspberry Pi now contains reserved IP address: 172.17.199.99
+    const response = await fetch("http://172.17.199.99:8080")
     const data = await response.json()
     // Create loading bar / API Down indicator
     this.realTemp = data.realTemp.toFixed()
